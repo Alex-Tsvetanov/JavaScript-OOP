@@ -13,3 +13,26 @@ Functions and Function Expressions
 	* It should return the prime numbers in an array
 	* It must throw an Error if any of the range params is not convertible to `Number`
 	* It must throw an Error if any of the range params is missing
+
+Testing
+==================================
+*	BG Coder: 
+	*	Test without returning a function
+	*	Write:
+	*	```js
+		function solve (args) 
+		{ 
+			... 
+		}
+		```
+*	localhost testing: 
+	*	Write:
+	*	```js
+		function solve () 
+		{ 
+			return function (args)
+			{
+				... 
+			};
+		}
+		```
