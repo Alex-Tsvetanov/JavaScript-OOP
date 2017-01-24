@@ -19,15 +19,15 @@ Testing
 *	BG Coder: 
 	*	Test without returning a function
 	*	Write:
-	*	```javascript
+	```javascript
 		function solve (args) 
 		{ 
 			... 
 		}
-		```
+	```
 *	localhost testing: 
 	*	Write:
-	*	```javascript
+	```javascript
 		function solve () 
 		{ 
 			return function (args)
@@ -35,4 +35,4 @@ Testing
 				... 
 			};
 		}
-		```
+	```
