@@ -24,18 +24,53 @@ function solve() {
 	var library = (function () {
 		var books = [];
 		var categories = [];
-		function listBooks() {
-			return books;
+
+		function listBooks(option) {
+			if (!option)
+			{
+				return books.slice (0);
+			}
+			else if (option.category)
+			{
+				return books.filter (x => x.category == option.category);
+			}
+			else if (option.author)
+			{
+				return books.filter (x => x.author == option.author);
+			}
+			else
+			{
+				return books.slice (0);
+			}
 		}
 
 		function addBook(book) {
+			if (
+				2 > book.category.length ||
+				100 < book.category.length ||
+				2 > book.title.length ||
+				100 < book.title.length ||
+				book.author === "" ||
+				10 > book.isbn.length ||
+				13 < book.isbn.length ||
+				books.filter (x => x.isbn == book.isbn).length != 0 ||
+				books.filter (x => x.title == book.title).length != 0// ||
+			   )
+			{
+				throw "";
+			}
 			book.ID = books.length + 1;
-			books.push(book);
+			books.push (book);
+			if (categories.indexOf(book.category) === -1)
+			{
+				categories.push (book.category);
+				console.log (categories);
+			}
 			return book;
 		}
 
 		function listCategories() {
-			return categories;
+			return categories.slice (0);
 		}
 
 		return {

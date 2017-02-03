@@ -1,0 +1,2020 @@
+
+> test-driven-hw-mocha@1.0.0 test /home/alex/GIT/JavaScript-OOP/Topics/03. Modules-and-Patterns/homework
+> mocha -R spec tests
+
+
+
+  Test for Modules and Patterns in JavaScript
+    Existence checks
+      ✓ expect result to be an object
+      ✓ expect result.init to be a function
+      ✓ expect result.addStudent to be a function
+      ✓ expect result.submitHomework to be a function
+      ✓ expect result.pushExamResults to be a function
+      ✓ expect result.getTopStudents to be a function
+    Title validation checks
+      ✓ expect to throw when there are no presentations in the result
+      1) expect to throw when a title is an empty string
+      2) expect to throw when there are consecutive spaces in a title
+      ✓ expect to throw if a title begins with a space
+      ✓ expect to throw if a title ends with a space
+      ✓ expect not to throw if titles are legit
+      ✓ expect not to throw if titles are legit and contain all kinds of symbols
+    Student validation checks
+      ✓ expect to throw when a student name is not a string
+      ✓ expect to throw when a student has only one name
+      ✓ expect to throw when a student has more than two names
+      ✓ expect to throw when a student name is invalid
+      ✓ expect to throw when a student name is invalid
+      ✓ expect not to throw when a student name is valid
+      ✓ expect not to throw when a student name is valid (a name consists of a single letter)
+    ID checks
+      3) expect result.addStudent to return unique student IDs - positive integers
+      4) expect result.submitHomework to throw if given invalid StudentID
+      5) expect result.submitHomework to throw if given invalid StudentID
+      6) expect result.submitHomework to throw if given invalid StudentID
+      7) expect result.submitHomework to throw if given invalid HomeworkID
+      8) expect result.submitHomework to throw if given invalid HomeworkID
+      9) expect result.submitHomework to throw if given invalid HomeworkID
+      ✓ expect result.submitHomework not to throw if given valid IDs
+    Getting students
+      10) expect getAllStudents to return an array of the listed students (no students)
+      11) expect getAllStudents to return an array of the listed students (one student)
+      12) expect getAllStudents to return an array of the listed students (many students)
+
+  Test for Modules and Patterns in JavaScript
+    Existence checks
+      ✓ expect Course to be an object
+      ✓ expect Course.init to be a function
+      ✓ expect Course.addStudent to be a function
+      ✓ expect Course.submitHomework to be a function
+      ✓ expect Course.pushExamResults to be a function
+      ✓ expect Course.getTopStudents to be a function
+    Title validation checks
+      ✓ expect to throw when there are no presentations in the course
+      13) expect to throw when a title is an empty string
+      14) expect to throw when there are consecutive spaces in a title
+      ✓ expect to throw if a title begins with a space
+      ✓ expect to throw if a title ends with a space
+      ✓ expect not to throw if titles are legit
+      ✓ expect not to throw if titles are legit and contain all kinds of symbols
+    Student validation checks
+      ✓ expect to throw when a student name is not a string
+      ✓ expect to throw when a student has only one name
+      ✓ expect to throw when a student has more than two names
+      ✓ expect to throw when a student name is invalid
+      ✓ expect to throw when a student name is invalid
+      ✓ expect not to throw when a student name is valid
+      ✓ expect not to throw when a student name is valid (a name consists of a single letter)
+    ID checks
+      15) expect Course.addStudent to return unique student IDs - positive integers
+      16) expect Course.submitHomework to throw if given invalid StudentID
+      17) expect Course.submitHomework to throw if given invalid StudentID
+      18) expect Course.submitHomework to throw if given invalid StudentID
+      19) expect Course.submitHomework to throw if given invalid HomeworkID
+      20) expect Course.submitHomework to throw if given invalid HomeworkID
+      21) expect Course.submitHomework to throw if given invalid HomeworkID
+      ✓ expect Course.submitHomework not to throw if given valid IDs
+    Getting students
+      22) expect getAllStudents to return an array of the listed students (no students)
+      23) expect getAllStudents to return an array of the listed students (one student)
+      24) expect getAllStudents to return an array of the listed students (many students)
+    Pushing Exam Results
+      25) expect pushExamResults to throw if given invalid scores (no arguments given)
+      26) expect pushExamResults to throw if given invalid scores (given string, not array)
+      27) expect pushExamResults to throw if given invalid scores (given object, not array)
+      28) expect pushExamResults to throw if given invalid scores (no score given for a student)
+      29) expect pushExamResults to throw if given invalid scores (same student twice)
+      30) expect pushExamResults to throw if given invalid scores (score is not a Number)
+      31) expect pushExamResults to throw if given invalid scores (id < first student's number)
+      32) expect pushExamResults to throw if given invalid scores (id > students number)
+      33) expect pushExamResults to throw if given invalid scores(id is not a number)
+      ✓ expect pushExamResults to not throw if given valid students and scores
+
+  Test for Modules and Patterns in JavaScript
+    Existence checks
+      ✓ expect Course to be an object
+      ✓ expect Course.init to be a function
+      ✓ expect Course.addStudent to be a function
+      ✓ expect Course.submitHomework to be a function
+      ✓ expect Course.pushExamResults to be a function
+      ✓ expect Course.getTopStudents to be a function
+    Title validation checks
+      ✓ expect to throw when there are no presentations in the course
+      34) expect to throw when a title is an empty string
+      35) expect to throw when there are consecutive spaces in a title
+      ✓ expect to throw if a title begins with a space
+      ✓ expect to throw if a title ends with a space
+      ✓ expect not to throw if titles are legit
+      ✓ expect not to throw if titles are legit and contain all kinds of symbols
+    Student validation checks
+      ✓ expect to throw when a student name is not a string
+      ✓ expect to throw when a student has only one name
+      ✓ expect to throw when a student has more than two names
+      ✓ expect to throw when a student name is invalid
+      ✓ expect to throw when a student name is invalid
+      ✓ expect not to throw when a student name is valid
+      ✓ expect not to throw when a student name is valid (a name consists of a single letter)
+    ID checks
+      36) expect Course.addStudent to return unique student IDs - positive integers
+      37) expect Course.submitHomework to throw if given invalid StudentID
+      38) expect Course.submitHomework to throw if given invalid StudentID
+      39) expect Course.submitHomework to throw if given invalid StudentID
+      40) expect Course.submitHomework to throw if given invalid HomeworkID
+      41) expect Course.submitHomework to throw if given invalid HomeworkID
+      42) expect Course.submitHomework to throw if given invalid HomeworkID
+      ✓ expect Course.submitHomework not to throw if given valid IDs
+    Getting students
+      43) expect getAllStudents to return an array of the listed students (no students)
+      44) expect getAllStudents to return an array of the listed students (one student)
+      45) expect getAllStudents to return an array of the listed students (many students)
+    Pushing Exam Results
+      46) expect pushExamResults to throw if given invalid scores (no arguments given)
+      47) expect pushExamResults to throw if given invalid scores (given string, not array)
+      48) expect pushExamResults to throw if given invalid scores (given object, not array)
+      49) expect pushExamResults to throw if given invalid scores (no score given for a student)
+      50) expect pushExamResults to throw if given invalid scores (same student twice)
+      51) expect pushExamResults to throw if given invalid scores (score is not a Number)
+      52) expect pushExamResults to throw if given invalid scores (id < first student's number)
+      53) expect pushExamResults to throw if given invalid scores (id > students number)
+      54) expect pushExamResults to throw if given invalid scores(id is not a number)
+      ✓ expect pushExamResults to not throw if given valid students and scores
+
+
+  59 passing (167ms)
+  54 failing
+
+  1) Test for Modules and Patterns in JavaScript Title validation checks expect to throw when a title is an empty string:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:49:22)
+
+  2) Test for Modules and Patterns in JavaScript Title validation checks expect to throw when there are consecutive spaces in a title:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:61:22)
+
+  3) Test for Modules and Patterns in JavaScript ID checks expect result.addStudent to return unique student IDs - positive integers:
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:207:38)
+
+  4) Test for Modules and Patterns in JavaScript ID checks expect result.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:217:22)
+
+  5) Test for Modules and Patterns in JavaScript ID checks expect result.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:227:22)
+
+  6) Test for Modules and Patterns in JavaScript ID checks expect result.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:237:22)
+
+  7) Test for Modules and Patterns in JavaScript ID checks expect result.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:247:22)
+
+  8) Test for Modules and Patterns in JavaScript ID checks expect result.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:257:22)
+
+  9) Test for Modules and Patterns in JavaScript ID checks expect result.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:267:22)
+
+  10) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (no students):
+
+      AssertionError: expected [ Array(109) ] to deeply equal []
+      + expected - actual
+
+      -[
+      -  {
+      -    "ID": 1
+      -    "firstname": "Johny"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 2
+      -    "firstname": "Transcribing"
+      -    "lastname": "K"
+      -  }
+      -  {
+      -    "ID": 3
+      -    "firstname": "Reddish"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 4
+      -    "firstname": "Transcribing"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 5
+      -    "firstname": "Marulq"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 6
+      -    "firstname": "Elegant"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 7
+      -    "firstname": "Keremidena"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 8
+      -    "firstname": "Toyed"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 9
+      -    "firstname": "Transcribing"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 10
+      -    "firstname": "Johny"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 11
+      -    "firstname": "Analogical"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 12
+      -    "firstname": "Johny"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 13
+      -    "firstname": "Analogical"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 14
+      -    "firstname": "Analogical"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 15
+      -    "firstname": "Notaname"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 16
+      -    "firstname": "Willfully"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 17
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 18
+      -    "firstname": "Pesho"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 19
+      -    "firstname": "Elegant"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 20
+      -    "firstname": "Pesho"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 21
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 22
+      -    "firstname": "Analogical"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 23
+      -    "firstname": "Transcribing"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 24
+      -    "firstname": "Toyed"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 25
+      -    "firstname": "Yglomer"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 26
+      -    "firstname": "Marulq"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 27
+      -    "firstname": "Reddish"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 28
+      -    "firstname": "Medlar"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 29
+      -    "firstname": "Samomidena"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 30
+      -    "firstname": "Reddish"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 31
+      -    "firstname": "Yglomer"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 32
+      -    "firstname": "Samomidena"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 33
+      -    "firstname": "Reddish"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 34
+      -    "firstname": "Johny"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 35
+      -    "firstname": "Johny"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 36
+      -    "firstname": "Analogical"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 37
+      -    "firstname": "Reddish"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 38
+      -    "firstname": "Keremidena"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 39
+      -    "firstname": "Marulq"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 40
+      -    "firstname": "Medlar"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 41
+      -    "firstname": "Yglomer"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 42
+      -    "firstname": "Notaname"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 43
+      -    "firstname": "Samomidena"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 44
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 45
+      -    "firstname": "Reddish"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 46
+      -    "firstname": "Samomidena"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 47
+      -    "firstname": "Pesho"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 48
+      -    "firstname": "Reddish"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 49
+      -    "firstname": "Medlar"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 50
+      -    "firstname": "Toyed"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 51
+      -    "firstname": "Medlar"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 52
+      -    "firstname": "Keremidena"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 53
+      -    "firstname": "Transcribing"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 54
+      -    "firstname": "Pesho"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 55
+      -    "firstname": "Samomidena"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 56
+      -    "firstname": "Medlar"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 57
+      -    "firstname": "Notaname"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 58
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 59
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 60
+      -    "firstname": "Toyed"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 61
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 62
+      -    "firstname": "Pesho"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 63
+      -    "firstname": "Toyed"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 64
+      -    "firstname": "Notaname"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 65
+      -    "firstname": "Keremidena"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 66
+      -    "firstname": "Yglomer"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 67
+      -    "firstname": "Pesho"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 68
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 69
+      -    "firstname": "Transcribing"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 70
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 71
+      -    "firstname": "Johny"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 72
+      -    "firstname": "Marulq"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 73
+      -    "firstname": "Marulq"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 74
+      -    "firstname": "Medlar"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 75
+      -    "firstname": "Yglomer"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 76
+      -    "firstname": "Samomidena"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 77
+      -    "firstname": "Elegant"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 78
+      -    "firstname": "Notaname"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 79
+      -    "firstname": "Notaname"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 80
+      -    "firstname": "Elegant"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 81
+      -    "firstname": "Keremidena"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 82
+      -    "firstname": "Samomidena"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 83
+      -    "firstname": "Notaname"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 84
+      -    "firstname": "Medlar"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 85
+      -    "firstname": "Willfully"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 86
+      -    "firstname": "Marulq"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 87
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 88
+      -    "firstname": "Medlar"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 89
+      -    "firstname": "Marulq"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 90
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 91
+      -    "firstname": "Marulq"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 92
+      -    "firstname": "Notaname"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 93
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 94
+      -    "firstname": "Notaname"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 95
+      -    "firstname": "Elegant"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 96
+      -    "firstname": "Toyed"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 97
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 98
+      -    "firstname": "Analogical"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 99
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 100
+      -    "firstname": "Yglomer"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 101
+      -    "firstname": "Transcribing"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 102
+      -    "firstname": "Johny"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 103
+      -    "firstname": "Keremidena"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 104
+      -    "firstname": "Keremidena"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 105
+      -    "firstname": "Elegant"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 106
+      -    "firstname": "Yglomer"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 107
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 108
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 109
+      -    "firstname": "Reddish"
+      -    "lastname": "Medlar"
+      -  }
+      -]
+      +[]
+      
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:286:38)
+
+  11) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (one student):
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:299:66)
+
+  12) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (many students):
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1-bgcoder.js:317:63)
+
+  13) Test for Modules and Patterns in JavaScript Title validation checks expect to throw when a title is an empty string:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:43:37)
+
+  14) Test for Modules and Patterns in JavaScript Title validation checks expect to throw when there are consecutive spaces in a title:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:51:37)
+
+  15) Test for Modules and Patterns in JavaScript ID checks expect Course.addStudent to return unique student IDs - positive integers:
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:174:50)
+
+  16) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:185:37)
+
+  17) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:196:37)
+
+  18) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:207:37)
+
+  19) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:218:37)
+
+  20) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:229:37)
+
+  21) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:240:37)
+
+  22) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (no students):
+
+      AssertionError: expected [ Array(109) ] to deeply equal []
+      + expected - actual
+
+      -[
+      -  {
+      -    "ID": 1
+      -    "firstname": "Johny"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 2
+      -    "firstname": "Johny"
+      -    "lastname": "K"
+      -  }
+      -  {
+      -    "ID": 3
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 4
+      -    "firstname": "Transcribing"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 5
+      -    "firstname": "Marulq"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 6
+      -    "firstname": "Keremidena"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 7
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 8
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 9
+      -    "firstname": "Marulq"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 10
+      -    "firstname": "Notaname"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 11
+      -    "firstname": "Yglomer"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 12
+      -    "firstname": "Notaname"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 13
+      -    "firstname": "Samomidena"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 14
+      -    "firstname": "Analogical"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 15
+      -    "firstname": "Samomidena"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 16
+      -    "firstname": "Marulq"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 17
+      -    "firstname": "Notaname"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 18
+      -    "firstname": "Willfully"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 19
+      -    "firstname": "Transcribing"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 20
+      -    "firstname": "Transcribing"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 21
+      -    "firstname": "Elegant"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 22
+      -    "firstname": "Notaname"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 23
+      -    "firstname": "Elegant"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 24
+      -    "firstname": "Elegant"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 25
+      -    "firstname": "Notaname"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 26
+      -    "firstname": "Medlar"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 27
+      -    "firstname": "Analogical"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 28
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 29
+      -    "firstname": "Reddish"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 30
+      -    "firstname": "Yglomer"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 31
+      -    "firstname": "Medlar"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 32
+      -    "firstname": "Johny"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 33
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 34
+      -    "firstname": "Reddish"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 35
+      -    "firstname": "Notaname"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 36
+      -    "firstname": "Elegant"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 37
+      -    "firstname": "Willfully"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 38
+      -    "firstname": "Transcribing"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 39
+      -    "firstname": "Yglomer"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 40
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 41
+      -    "firstname": "Yglomer"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 42
+      -    "firstname": "Samomidena"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 43
+      -    "firstname": "Johny"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 44
+      -    "firstname": "Medlar"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 45
+      -    "firstname": "Notaname"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 46
+      -    "firstname": "Willfully"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 47
+      -    "firstname": "Analogical"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 48
+      -    "firstname": "Elegant"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 49
+      -    "firstname": "Willfully"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 50
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 51
+      -    "firstname": "Medlar"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 52
+      -    "firstname": "Willfully"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 53
+      -    "firstname": "Pesho"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 54
+      -    "firstname": "Elegant"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 55
+      -    "firstname": "Toyed"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 56
+      -    "firstname": "Keremidena"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 57
+      -    "firstname": "Marulq"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 58
+      -    "firstname": "Samomidena"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 59
+      -    "firstname": "Toyed"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 60
+      -    "firstname": "Analogical"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 61
+      -    "firstname": "Johny"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 62
+      -    "firstname": "Willfully"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 63
+      -    "firstname": "Transcribing"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 64
+      -    "firstname": "Analogical"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 65
+      -    "firstname": "Marulq"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 66
+      -    "firstname": "Elegant"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 67
+      -    "firstname": "Yglomer"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 68
+      -    "firstname": "Samomidena"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 69
+      -    "firstname": "Analogical"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 70
+      -    "firstname": "Willfully"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 71
+      -    "firstname": "Elegant"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 72
+      -    "firstname": "Reddish"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 73
+      -    "firstname": "Medlar"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 74
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 75
+      -    "firstname": "Willfully"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 76
+      -    "firstname": "Johny"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 77
+      -    "firstname": "Analogical"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 78
+      -    "firstname": "Keremidena"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 79
+      -    "firstname": "Elegant"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 80
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 81
+      -    "firstname": "Samomidena"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 82
+      -    "firstname": "Willfully"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 83
+      -    "firstname": "Marulq"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 84
+      -    "firstname": "Transcribing"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 85
+      -    "firstname": "Elegant"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 86
+      -    "firstname": "Yglomer"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 87
+      -    "firstname": "Reddish"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 88
+      -    "firstname": "Keremidena"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 89
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 90
+      -    "firstname": "Samomidena"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 91
+      -    "firstname": "Keremidena"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 92
+      -    "firstname": "Yglomer"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 93
+      -    "firstname": "Samomidena"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 94
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 95
+      -    "firstname": "Medlar"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 96
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 97
+      -    "firstname": "Toyed"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 98
+      -    "firstname": "Elegant"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 99
+      -    "firstname": "Toyed"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 100
+      -    "firstname": "Yglomer"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 101
+      -    "firstname": "Reddish"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 102
+      -    "firstname": "Reddish"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 103
+      -    "firstname": "Marulq"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 104
+      -    "firstname": "Transcribing"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 105
+      -    "firstname": "Johny"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 106
+      -    "firstname": "Toyed"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 107
+      -    "firstname": "Elegant"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 108
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 109
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Willfully"
+      -  }
+      -]
+      +[]
+      
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:258:50)
+
+  23) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (one student):
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:269:78)
+
+  24) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (many students):
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:287:75)
+
+  25) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (no arguments given):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:299:37)
+
+  26) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (given string, not array):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:308:37)
+
+  27) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (given object, not array):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:317:37)
+
+  28) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (no score given for a student):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:328:37)
+
+  29) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (same student twice):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:339:37)
+
+  30) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (score is not a Number):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:348:37)
+
+  31) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (id < first student's number):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:357:37)
+
+  32) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (id > students number):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:367:37)
+
+  33) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores(id is not a number):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1-compiled.js:377:37)
+
+  34) Test for Modules and Patterns in JavaScript Title validation checks expect to throw when a title is an empty string:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:43:34)
+
+  35) Test for Modules and Patterns in JavaScript Title validation checks expect to throw when there are consecutive spaces in a title:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:55:34)
+
+  36) Test for Modules and Patterns in JavaScript ID checks expect Course.addStudent to return unique student IDs - positive integers:
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1.js:200:50)
+
+  37) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:210:34)
+
+  38) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:220:34)
+
+  39) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid StudentID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:230:34)
+
+  40) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:240:34)
+
+  41) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:250:34)
+
+  42) Test for Modules and Patterns in JavaScript ID checks expect Course.submitHomework to throw if given invalid HomeworkID:
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:260:34)
+
+  43) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (no students):
+
+      AssertionError: expected [ Array(109) ] to deeply equal []
+      + expected - actual
+
+      -[
+      -  {
+      -    "ID": 1
+      -    "firstname": "Toyed"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 2
+      -    "firstname": "Johny"
+      -    "lastname": "K"
+      -  }
+      -  {
+      -    "ID": 3
+      -    "firstname": "Notaname"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 4
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 5
+      -    "firstname": "Reddish"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 6
+      -    "firstname": "Willfully"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 7
+      -    "firstname": "Willfully"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 8
+      -    "firstname": "Keremidena"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 9
+      -    "firstname": "Transcribing"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 10
+      -    "firstname": "Analogical"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 11
+      -    "firstname": "Samomidena"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 12
+      -    "firstname": "Johny"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 13
+      -    "firstname": "Toyed"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 14
+      -    "firstname": "Marulq"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 15
+      -    "firstname": "Elegant"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 16
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 17
+      -    "firstname": "Marulq"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 18
+      -    "firstname": "Medlar"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 19
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 20
+      -    "firstname": "Willfully"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 21
+      -    "firstname": "Keremidena"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 22
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 23
+      -    "firstname": "Keremidena"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 24
+      -    "firstname": "Samomidena"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 25
+      -    "firstname": "Willfully"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 26
+      -    "firstname": "Analogical"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 27
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 28
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 29
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 30
+      -    "firstname": "Toyed"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 31
+      -    "firstname": "Toyed"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 32
+      -    "firstname": "Elegant"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 33
+      -    "firstname": "Yglomer"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 34
+      -    "firstname": "Pesho"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 35
+      -    "firstname": "Marulq"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 36
+      -    "firstname": "Marulq"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 37
+      -    "firstname": "Transcribing"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 38
+      -    "firstname": "Willfully"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 39
+      -    "firstname": "Willfully"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 40
+      -    "firstname": "Analogical"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 41
+      -    "firstname": "Yglomer"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 42
+      -    "firstname": "Willfully"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 43
+      -    "firstname": "Pesho"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 44
+      -    "firstname": "Toyed"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 45
+      -    "firstname": "Keremidena"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 46
+      -    "firstname": "Willfully"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 47
+      -    "firstname": "Reddish"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 48
+      -    "firstname": "Medlar"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 49
+      -    "firstname": "Willfully"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 50
+      -    "firstname": "Pesho"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 51
+      -    "firstname": "Reddish"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 52
+      -    "firstname": "Elegant"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 53
+      -    "firstname": "Elegant"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 54
+      -    "firstname": "Johny"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 55
+      -    "firstname": "Johny"
+      -    "lastname": "Samomidena"
+      -  }
+      -  {
+      -    "ID": 56
+      -    "firstname": "Willfully"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 57
+      -    "firstname": "Yglomer"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 58
+      -    "firstname": "Yglomer"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 59
+      -    "firstname": "Notaname"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 60
+      -    "firstname": "Willfully"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 61
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 62
+      -    "firstname": "Pesho"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 63
+      -    "firstname": "Willfully"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 64
+      -    "firstname": "Marulq"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 65
+      -    "firstname": "Reddish"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 66
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 67
+      -    "firstname": "Yglomer"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 68
+      -    "firstname": "Elegant"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 69
+      -    "firstname": "Samomidena"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 70
+      -    "firstname": "Yglomer"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 71
+      -    "firstname": "Analogical"
+      -    "lastname": "Elegant"
+      -  }
+      -  {
+      -    "ID": 72
+      -    "firstname": "Pesho"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 73
+      -    "firstname": "Willfully"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 74
+      -    "firstname": "Analogical"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 75
+      -    "firstname": "Samomidena"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 76
+      -    "firstname": "Analogical"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 77
+      -    "firstname": "Marulq"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 78
+      -    "firstname": "Yglomer"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 79
+      -    "firstname": "Samomidena"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 80
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 81
+      -    "firstname": "Keremidena"
+      -    "lastname": "Marulq"
+      -  }
+      -  {
+      -    "ID": 82
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 83
+      -    "firstname": "Elegant"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 84
+      -    "firstname": "Analogical"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 85
+      -    "firstname": "Elegant"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 86
+      -    "firstname": "Bolsheviks"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 87
+      -    "firstname": "Transcribing"
+      -    "lastname": "Keremidena"
+      -  }
+      -  {
+      -    "ID": 88
+      -    "firstname": "Willfully"
+      -    "lastname": "Toyed"
+      -  }
+      -  {
+      -    "ID": 89
+      -    "firstname": "Arbitrage"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 90
+      -    "firstname": "Pesho"
+      -    "lastname": "Notaname"
+      -  }
+      -  {
+      -    "ID": 91
+      -    "firstname": "Notaname"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 92
+      -    "firstname": "Toyed"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 93
+      -    "firstname": "Notaname"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 94
+      -    "firstname": "Elegant"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 95
+      -    "firstname": "Medlar"
+      -    "lastname": "Willfully"
+      -  }
+      -  {
+      -    "ID": 96
+      -    "firstname": "Notaname"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 97
+      -    "firstname": "Analogical"
+      -    "lastname": "Medlar"
+      -  }
+      -  {
+      -    "ID": 98
+      -    "firstname": "Samomidena"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 99
+      -    "firstname": "Marulq"
+      -    "lastname": "Arbitrage"
+      -  }
+      -  {
+      -    "ID": 100
+      -    "firstname": "Pesho"
+      -    "lastname": "Transcribing"
+      -  }
+      -  {
+      -    "ID": 101
+      -    "firstname": "Keremidena"
+      -    "lastname": "Bolsheviks"
+      -  }
+      -  {
+      -    "ID": 102
+      -    "firstname": "Keremidena"
+      -    "lastname": "Analogical"
+      -  }
+      -  {
+      -    "ID": 103
+      -    "firstname": "Samomidena"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 104
+      -    "firstname": "Willfully"
+      -    "lastname": "Yglomer"
+      -  }
+      -  {
+      -    "ID": 105
+      -    "firstname": "Keremidena"
+      -    "lastname": "Johny"
+      -  }
+      -  {
+      -    "ID": 106
+      -    "firstname": "Willfully"
+      -    "lastname": "Reddish"
+      -  }
+      -  {
+      -    "ID": 107
+      -    "firstname": "Samomidena"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 108
+      -    "firstname": "Medlar"
+      -    "lastname": "Pesho"
+      -  }
+      -  {
+      -    "ID": 109
+      -    "firstname": "Marulq"
+      -    "lastname": "Samomidena"
+      -  }
+      -]
+      +[]
+      
+      at Context.<anonymous> (tests/tests-task-1.js:278:50)
+
+  44) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (one student):
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1.js:290:78)
+
+  45) Test for Modules and Patterns in JavaScript Getting students expect getAllStudents to return an array of the listed students (many students):
+     AssertionError: expected false to be true
+      at Context.<anonymous> (tests/tests-task-1.js:307:75)
+
+  46) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (no arguments given):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:320:34)
+
+  47) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (given string, not array):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:330:34)
+
+  48) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (given object, not array):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:340:34)
+
+  49) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (no score given for a student):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:352:34)
+
+  50) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (same student twice):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:364:34)
+
+  51) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (score is not a Number):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:374:34)
+
+  52) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (id < first student's number):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:384:34)
+
+  53) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores (id > students number):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:395:34)
+
+  54) Test for Modules and Patterns in JavaScript Pushing Exam Results expect pushExamResults to throw if given invalid scores(id is not a number):
+     AssertionError: expected [Function: test] to throw an error
+      at Context.<anonymous> (tests/tests-task-1.js:406:34)
+
+
+
